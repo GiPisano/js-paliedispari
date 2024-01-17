@@ -15,13 +15,13 @@ function palindromicWord(word){
 
     console.log(word);
     console.log(arrayWord);
-    // verifico se la parole è polidroma oppure no
+    // verifico se la parole è polindroma oppure no
     
 
     if(word == arrayWord){
-        console.log('la parola è polidroma');
+        console.log('la parola è palindroma');
     }else{
-        console.log('la parola non è polidroma');
+        console.log('la parola non è palindroma');
     }
 
 } 
