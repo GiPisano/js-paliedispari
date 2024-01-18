@@ -11,9 +11,8 @@ function sum(num1, num2){
 }
 
 // funzione che ti dice se un numero è pari o dispari
-function isEvenOrOdd(num){
-    const result = (num % 2 == 0) ? 'pari' : 'dispari';
-    return result;
+function isEven(num){
+    return result = num % 2 == 0;
 }
 
 

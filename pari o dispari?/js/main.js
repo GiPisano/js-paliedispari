@@ -23,12 +23,13 @@ const sumNumbers = sum(numberUser, numberComputer);
 console.log(`la somma dei due numeri fa ${sumNumbers}`);
 
 // controllo che il risultato della somma dei due numeri sia pari o dispari
-const evenOrOdd = isEvenOrOdd(sumNumbers);
+let evenOrOdd = isEven(sumNumbers);
+evenOrOdd = isEven(sumNumbers) ? 'pari' : 'dispari';
 console.log(`il numero è ${evenOrOdd}`);
 
 // determino chi ha vinto
-if(userChoice === 'pari' && evenOrOdd === 'pari' ||
-userChoice === 'dispari' && evenOrOdd === 'dispari'){
+if(userChoice === 'pari' && isEven === true ||
+userChoice === 'dispari' && isEven === false){
     console.log('hai vinto')
 }else{
     console.log('il computer ha vinto')
