@@ -12,9 +12,8 @@ function palindromicWord(word){
 
     // trasformo l'array in una stringa
     arrayWord = arrayWord.join('');
-
-    console.log(word);
-    console.log(arrayWord);
+    console.log(`la parola inserita è "${word}"`);
+    console.log(`la parola inserita ma al contrario è "${arrayWord}"`);
     // verifico se la parole è polindroma oppure no
     
 

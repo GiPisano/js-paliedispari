@@ -1,5 +1,5 @@
 // chiedo all'utente di scegliere tra pari o dispari
-let userChoice = prompt('pari o dispari?').toLowerCase();
+let userChoice = prompt('pari o dispari?');
 // Verifica se l'input è un numero o se non è né 'pari' né 'dispari'
 while (!isNaN(userChoice) || (userChoice !== 'pari' && userChoice !== 'dispari')) {
     userChoice = prompt(`I dati inseriti non sono corretti. devi inserire 'pari' o 'dispari'`);
@@ -24,11 +24,11 @@ console.log(`la somma dei due numeri fa ${sumNumbers}`);
 
 // controllo che il risultato della somma dei due numeri sia pari o dispari
 const evenOrOdd = isEvenOrOdd(sumNumbers);
-console.log(`il numero ${evenOrOdd}`);
+console.log(`il numero è ${evenOrOdd}`);
 
 // determino chi ha vinto
-if(userChoice === 'pari' && evenOrOdd === 'è pari' ||
-userChoice === 'dispari' && evenOrOdd === 'é dispari'){
+if(userChoice === 'pari' && evenOrOdd === 'pari' ||
+userChoice === 'dispari' && evenOrOdd === 'dispari'){
     console.log('hai vinto')
 }else{
     console.log('il computer ha vinto')
